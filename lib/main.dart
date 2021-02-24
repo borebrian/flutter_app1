@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter learning',
+
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -29,8 +30,19 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text(
-            "Test"
+            "Sales management system",style: TextStyle(
+            fontFamily: 'shop'
           ),
+          ),
+          leading: IconButton(
+            icon: Image.asset('assets/logo.png'),
+          ),
+actions: [
+  IconButton(icon: Icon(
+    Icons.apps,
+    color: Colors.white,
+  ), onPressed: null)
+],
           backgroundColor: primarycolor,
         ),
       ),
